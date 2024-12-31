@@ -1,3 +1,6 @@
+#ifndef TURMA
+#define TURMA
+
 #include <iostream>
 #include <vector>
 #include "Aluno.h"
@@ -22,6 +25,22 @@ class Turma
         
     public:
 
+        void setId(string t_id);
+        void setCurso(string t_curso);
+        void setModulo(string t_modulo);
+        void setHorario(string t_horario);
+        void setStatusDaTurma(string t_statusDaTurma);
+        void setAlunosInscritos(vector<Aluno> t_alunosInscritos);
+        void setProfessor(Professor t_professor);
+
+        string getId();
+        string getCurso();
+        string getModulo();
+        string getHorario();
+        string getStatusDaTurma();
+        vector<Aluno> getAlunosInscritos();
+        Professor getProfessor();
+
         void adicionarAluno();
         void removerAluno();
         void adicionarProfessor();
@@ -30,3 +49,5 @@ class Turma
         Professor verificarProfessor();
         string verificarStatusDaTurma();
 };
+
+#endif // TURMA

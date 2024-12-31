@@ -1,3 +1,6 @@
+#ifndef ALUNO
+#define ALUNO
+
 #include <iostream>
 #include <vector>
 #include "Turma.h"
@@ -17,6 +20,20 @@ class Aluno
         
     public:
 
+        void setNome(string a_nome);
+        void setMatricula(string a_matricula);
+        void setEmail(string a_email);
+        void setTelefone(string a_telefone);
+        void setPreferenciaDeHorarios(vector<string> a_preferenciaDeHorarios);
+        void setTurmasSolicitadas(vector<SolicitacaoDeTurma> a_turmasSolicitadas);
+
+        string getNome();
+        string getMatricula();
+        string getEmail();
+        string getTelefone();
+        vector<string> getPreferenciaDeHorarios();
+        vector<SolicitacaoDeTurma> getTurmasSolicitadas();
+
         void solicitarTurma();
         void removerSolicitacao();
         bool confirmarInscricao();
@@ -24,3 +41,5 @@ class Aluno
         vector<Turma> verificarTurmasCriadas();
         vector<SolicitacaoDeTurma> verificarTurmasAbertas();
 };
+
+#endif // ALUNO
