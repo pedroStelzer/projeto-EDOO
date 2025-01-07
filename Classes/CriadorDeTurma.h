@@ -11,18 +11,21 @@ class CriadorDeTurma
 {
     private:
 
-        Professor professor;
-        vector<Aluno> alunos;
+        string professor;
+        vector<string> alunos;
         SolicitacaoDeTurma solicitacaoDeTurma;
         
     public:
 
-        void setProfessor(Professor c_professor);
-        void setAlunos(vector<Aluno> c_alunos);
+        CriadorDeTurma(string c_professor, vector<string> c_alunos, SolicitacaoDeTurma c_solicitacaoDeTurma);
+        ~CriadorDeTurma();
+
+        void setProfessor(string c_professor);
+        void setAlunos(vector<string> c_alunos);
         void setSolicitacaoDeTurma(SolicitacaoDeTurma c_solicitacaoDeTurma);
 
-        Professor getProfessor();
-        vector<Aluno> getAlunos();
+        string getProfessor();
+        vector<string> getAlunos();
         SolicitacaoDeTurma getSolicitacaoDeTurma();
 
         bool verificarCompatibilidade();

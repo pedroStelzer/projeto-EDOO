@@ -15,27 +15,28 @@ class SolicitacaoDeTurma
         string curso;
         string modulo;
         string horario;
-        vector<Aluno> alunosInscritos;
-        Professor professor;
+        vector<string> matriculas;
+        string professor;
         
     public:
+
+        SolicitacaoDeTurma(string s_id, string s_curso, string s_modulo, string s_horario, vector<string> s_matriculas, string s_professor);
+        ~SolicitacaoDeTurma();
 
         void setId(string s_id);
         void setCurso(string s_curso);
         void setModulo(string s_modulo);
         void setHorario(string s_horario);
-        void setAlunosInscritos(vector<Aluno> s_alunosInscritos);
-        void setProfessor(Professor s_professor);
+        void setMatriculas(vector<string> s_matriculas);
+        void setProfessor(string s_professor);
         
         string getId();
         string getCurso();
         string getModulo();
         string getHorario();
-        vector<Aluno> getAlunosInscritos();
-        Professor getProfessor();
+        vector<string> getMatriculas();
+        string getProfessor();
 
-        vector<Aluno> verificarAlunos();
-        Professor verificarProfessor();
         string verificarInformacoes();
 };
 

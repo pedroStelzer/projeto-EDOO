@@ -17,9 +17,12 @@ class Instituicao
         string telefone;
         string email;
         vector<Turma> turmasDisponiveis;
-        vector<Professor> professores;
+        vector<string> professores;
         
     public:
+
+        Instituicao(string i_id, string i_nome, string i_endereco, string i_telefone, string i_email);
+        ~Instituicao();
 
         void setId(string i_id);
         void setNome(string i_nome);
@@ -27,7 +30,7 @@ class Instituicao
         void setTelefone(string i_telefone);
         void setEmail(string i_email);
         void setTurmasDisponiveis(vector<Turma> i_turmasDisponiveis);
-        void setProfessores(vector<Professor> i_professor);
+        void setProfessores(vector<string> i_professor);
 
         string getId();
         string getNome();
@@ -35,7 +38,7 @@ class Instituicao
         string getTelefone();
         string getEmail();
         vector<Turma> getTurmasDisponiveis();
-        vector<Professor> getProfessores();
+        vector<string> getProfessores();
 
         void criarTurma();
         void removerTurma();

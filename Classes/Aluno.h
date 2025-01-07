@@ -20,6 +20,9 @@ class Aluno
         
     public:
 
+        Aluno(string a_nome, string a_matricula, string a_email, string a_telefone);
+        ~Aluno();
+
         void setNome(string a_nome);
         void setMatricula(string a_matricula);
         void setEmail(string a_email);
