@@ -16,7 +16,6 @@ class Aluno
         string email;
         string telefone;
         vector<string> preferenciaDeHorarios;
-        vector<SolicitacaoDeTurma> turmasSolicitadas;
         
     public:
 
@@ -28,21 +27,15 @@ class Aluno
         void setEmail(string a_email);
         void setTelefone(string a_telefone);
         void setPreferenciaDeHorarios(vector<string> a_preferenciaDeHorarios);
-        void setTurmasSolicitadas(vector<SolicitacaoDeTurma> a_turmasSolicitadas);
 
         string getNome();
         string getMatricula();
         string getEmail();
         string getTelefone();
         vector<string> getPreferenciaDeHorarios();
-        vector<SolicitacaoDeTurma> getTurmasSolicitadas();
 
-        void solicitarTurma();
-        void removerSolicitacao();
         bool confirmarInscricao();
         bool cancelarInscricao();
-        vector<Turma> verificarTurmasCriadas();
-        vector<SolicitacaoDeTurma> verificarTurmasAbertas();
 };
 
 #endif // ALUNO
