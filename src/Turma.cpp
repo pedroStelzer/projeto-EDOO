@@ -5,7 +5,15 @@ using namespace std;
 
 Turma::Turma(string t_id, string t_curso, string t_modulo, string t_horario, string t_statusDaTurma, vector<string> t_matriculas, string t_professor)
 {
-
+    id = t_id;
+    curso = t_curso;
+    modulo = t_modulo;
+    horario = t_horario;
+    statusDaTurma = t_statusDaTurma;
+    for(int i = 0; i < t_matriculas.size(); i++)
+    {
+        matriculas.push_back(t_matriculas[i]);
+    };
 };
 
 Turma::~Turma()

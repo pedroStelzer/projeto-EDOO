@@ -5,7 +5,10 @@ using namespace std;
 
 Aluno::Aluno(string a_nome, string a_matricula, string a_email, string a_telefone)
 {
-
+    nome = a_nome;
+    matricula = a_matricula;
+    email = a_email;
+    telefone = a_telefone;
 };
 
 Aluno::~Aluno()

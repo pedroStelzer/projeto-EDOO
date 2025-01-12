@@ -5,7 +5,14 @@ using namespace std;
 
 Professor::Professor(string p_nome, string p_id, string p_email, string p_telefone, vector<string> p_idTurmasLecionando)
 {
-
+    nome = p_nome;
+    id = p_id;
+    email = p_email;
+    telefone = p_telefone;
+    for(int i = 0; i < p_idTurmasLecionando.size(); i++)
+    {
+        idTurmasLecionando.push_back(p_idTurmasLecionando[i]);
+    };
 };
 
 Professor::~Professor()

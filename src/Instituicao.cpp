@@ -3,7 +3,11 @@
 
 Instituicao::Instituicao(string i_id, string i_nome, string i_endereco, string i_telefone, string i_email)
 {
-
+    id = i_id;
+    nome = i_nome;
+    endereco = i_endereco;
+    telefone = i_telefone;
+    email = i_email;
 };
 
 Instituicao::~Instituicao()
