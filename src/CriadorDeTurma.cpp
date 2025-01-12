@@ -19,22 +19,25 @@ CriadorDeTurma::~CriadorDeTurma()
 
 void CriadorDeTurma::setProfessor(string c_professor)
 {
-
+    professor = c_professor;
 };
 
 void CriadorDeTurma::setAlunos(vector<string> c_alunos)
 {
-
+    for(int i = 0; i < c_alunos.size(); i++)
+    {
+        alunos.push_back(c_alunos[i]);
+    };
 };
 
 string CriadorDeTurma::getProfessor()
 {
-
+    return professor;
 };
 
 vector<string> CriadorDeTurma::getAlunos()
 {
-
+    return alunos;
 };
 
 bool CriadorDeTurma::verificarCompatibilidade()

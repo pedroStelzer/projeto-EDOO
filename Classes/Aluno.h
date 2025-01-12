@@ -19,7 +19,7 @@ class Aluno
         
     public:
 
-        Aluno(string a_nome, string a_matricula, string a_email, string a_telefone);
+        Aluno(string a_nome, string a_matricula, string a_email, string a_telefon, vector<string> a_preferenciaDeHorarios);
         ~Aluno();
 
         void setNome(string a_nome);
