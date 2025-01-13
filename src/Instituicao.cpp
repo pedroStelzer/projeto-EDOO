@@ -1,7 +1,7 @@
 #include <iostream>
 #include "../Classes/Instituicao.h"
 
-Instituicao::Instituicao(string i_id, string i_nome, string i_endereco, string i_telefone, string i_email, vector<string> i_idTurmasDisponiveis, vector<string> i_professores)
+Instituicao::Instituicao(string i_id, string i_nome, string i_endereco, string i_telefone, string i_email, vector<string> i_idTurmasDisponiveis, vector<string> i_listaDeProfessores)
 {
     id = i_id;
     nome = i_nome;
@@ -12,9 +12,9 @@ Instituicao::Instituicao(string i_id, string i_nome, string i_endereco, string i
     {
         idTurmasDisponiveis.push_back(i_idTurmasDisponiveis[i]);
     };
-    for(int i = 0; i < i_professores.size(); i++)
+    for(int i = 0; i < i_listaDeProfessores.size(); i++)
     {
-        professores.push_back(i_professores[i]);
+        listaDeProfessores.push_back(i_listaDeProfessores[i]);
     };
 };
 
@@ -56,11 +56,11 @@ void Instituicao::setTurmasDisponiveis(vector<string> i_idTurmasDisponiveis)
     };
 };
 
-void Instituicao::setProfessores(vector<string> i_professores)
+void Instituicao::setListaDeProfessores(vector<string> i_listaDeProfessores)
 {
-    for(int i = 0; i < i_professores.size(); i++)
+    for(int i = 0; i < i_listaDeProfessores.size(); i++)
     {
-        professores.push_back(i_professores[i]);
+        listaDeProfessores.push_back(i_listaDeProfessores[i]);
     };
 };
 
@@ -94,22 +94,17 @@ vector<string> Instituicao::getIdTurmasDisponiveis()
     return idTurmasDisponiveis;
 };
 
-vector<string> Instituicao::getProfessores()
+vector<string> Instituicao::getListaDeProfessores()
 {
-    return professores;
+    return listaDeProfessores;
 };
 
-void Instituicao::criarTurma()
+void Instituicao::criarTurma(string i_id, string i_curso, string i_modulo, string i_horario, string i_statusDaTurma, vector<string> i_matriculas, string i_professor)
 {
-
+    Turma *t = new Turma(i_id, i_curso, i_modulo, i_horario, i_statusDaTurma, i_matriculas, i_professor);
 };
 
 void Instituicao::removerTurma()
-{
-
-};
-
-void Instituicao::removerSolicitacaoDeTurma()
 {
 
 };
@@ -119,7 +114,20 @@ vector<Turma> Instituicao::verificarTurmasCriadas()
 
 };
 
-void Instituicao::adicionarProfessor()
+void Instituicao::adicionarProfessor(string i_professsor)
 {
-    
+    listaDeProfessores.push_back(i_professsor);
+};
+
+void Instituicao::removerProfessor(string i_professor)
+{
+    bool encontrou = false;
+    for(int i = 0; i < listaDeProfessores.size(); i++)
+    {
+        if(listaDeProfessores[i] == i_professor || encontrou)
+        {
+            listaDeProfessores[i] = listaDeProfessores[i+1];
+            encontrou = true;
+        }
+    }
 };
