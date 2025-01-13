@@ -130,4 +130,6 @@ void Instituicao::removerProfessor(string i_professor)
             encontrou = true;
         }
     }
+
+    listaDeProfessores.resize(listaDeProfessores.size()-1);
 };
