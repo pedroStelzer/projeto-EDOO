@@ -3,8 +3,9 @@
 
 using namespace std;
 
-CriadorDeTurma::CriadorDeTurma(string c_professor, vector<string> c_alunos)
+CriadorDeTurma::CriadorDeTurma(int c_quantidadeMinimaDeAlunos, string c_professor, vector<string> c_alunos)
 {
+    quantidadeMinimaDeAlunos = c_quantidadeMinimaDeAlunos;
     professor = c_professor;
     for(int i = 0; i < c_alunos.size(); i++)
     {
@@ -15,6 +16,11 @@ CriadorDeTurma::CriadorDeTurma(string c_professor, vector<string> c_alunos)
 CriadorDeTurma::~CriadorDeTurma()
 {
 
+};
+
+void CriadorDeTurma::setQuantidadeMinimaDeAlunos(int c_quantidadeMinimaDeAlunos)
+{
+    quantidadeMinimaDeAlunos = c_quantidadeMinimaDeAlunos;
 };
 
 void CriadorDeTurma::setProfessor(string c_professor)
@@ -28,6 +34,11 @@ void CriadorDeTurma::setAlunos(vector<string> c_alunos)
     {
         alunos.push_back(c_alunos[i]);
     };
+};
+
+int CriadorDeTurma::getQuantidadeMinimaDeAlunos()
+{
+    return quantidadeMinimaDeAlunos;
 };
 
 string CriadorDeTurma::getProfessor()
