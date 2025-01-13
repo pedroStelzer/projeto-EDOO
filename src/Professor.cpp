@@ -75,10 +75,10 @@ vector<string> Professor::getIdTurmasLecionando()
 
 bool Professor::confirmarInscricao()
 {
-
+    return true;
 };
 
 bool Professor::cancelarInscricao()
 {
-
+    return false;
 };

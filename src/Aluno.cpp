@@ -75,10 +75,10 @@ vector<string> Aluno::getPreferenciaDeHorarios()
 
 bool Aluno::confirmarInscricao()
 {
-
+    return true;
 };
 
 bool Aluno::cancelarInscricao()
 {
-
+    return false;
 };

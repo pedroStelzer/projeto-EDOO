@@ -36,8 +36,6 @@ class Professor
 
         bool confirmarInscricao();
         bool cancelarInscricao();
-        vector<Turma> verificarTurmasCriadas();
-        vector<SolicitacaoDeTurma> verificarTurmasAbertas();
 };
 
 #endif // PROFESSOR
