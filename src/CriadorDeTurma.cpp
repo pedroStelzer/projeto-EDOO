@@ -42,10 +42,17 @@ vector<string> CriadorDeTurma::getAlunos()
 
 bool CriadorDeTurma::verificarCompatibilidade()
 {
-
+    /*if(true)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }*/
 };
 
-void CriadorDeTurma::criarTurma()
+void CriadorDeTurma::criarTurma(string c_id, string c_curso, string c_modulo, string c_horario, string c_statusDaTurma, vector<string> c_matriculas, string c_professor)
 {
-
+    Turma *t = new Turma(c_id, c_curso, c_modulo, c_horario, c_statusDaTurma, c_matriculas, c_professor);
 };
