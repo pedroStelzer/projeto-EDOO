@@ -95,22 +95,27 @@ string Turma::getProfessor()
     return professor;
 };
 
-void Turma::adicionarAluno()
+void Turma::adicionarAluno(string a_id)
 {
-
+    matriculas.push_back(a_id);
 };
 
-void Turma::removerAluno()
+void Turma::removerAluno(string a_id)
 {
+    bool encontrou = false;
+    for(int i = 0; i < matriculas.size(); i++)
+    {
+        if(matriculas[i] == a_id || encontrou)
+        {
+            matriculas[i] = matriculas[i+1];
+            encontrou = true;
+        }
+    }
 
-};
-
-void Turma::adicionarProfessor()
-{
-
+    matriculas.resize(matriculas.size()-1);
 };
 
 void Turma::removerProfessor()
 {
-
+    professor = "professor auxente";
 };

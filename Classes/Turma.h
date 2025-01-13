@@ -44,9 +44,8 @@ class Turma
         vector<string> getMatriculas();
         string getProfessor();
 
-        void adicionarAluno();
-        void removerAluno();
-        void adicionarProfessor();
+        void adicionarAluno(string a_id);
+        void removerAluno(string a_id);
         void removerProfessor();
 };
 
