@@ -57,7 +57,7 @@ Compile e execute o sistema
 ![image](https://github.com/user-attachments/assets/5e57fb74-69c9-45b1-9e7c-a473595c4bd5)
 
 
-### Tela de Cadastro de Aluno e Professor
+### Tela de Cadastro de Aluno e de Professor
 
 **Obs**: A tela de cadastro de Aluno e de Professor são praticamente iguais
 
@@ -90,7 +90,7 @@ O sistema utiliza SQLite para armazenar as informações dos alunos, professores
 🔹 Interface para alunos e professores, permitindo interação direta no sistema  
 🔹 Refatoração do código para implementar herança (exemplo: criar uma classe Usuário para unificar Aluno e Professor)  
 🔹 Aprimoramento da interface gráfica, tornando-a mais intuitiva e acessível  
-🔹 Implementação de um instalador  
+🔹 Implementação de um instalador para facilitar a utilização do sistema
 
 ## 📌 Conclusão
 
