@@ -5,13 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Marcação de Turmas</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
-        h1 { color: #007bff; }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; background-color: #f4f4f4; }
+        header { background: #007bff; color: white; padding: 20px; font-size: 24px; }
+        section { max-width: 800px; margin: 20px auto; padding: 20px; background: white; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+        h2 { color: #007bff; }
+        p { font-size: 18px; line-height: 1.6; }
+        .container { text-align: left; padding: 10px; }
+        ul { text-align: left; }
+        .screenshot { max-width: 100%; border-radius: 5px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
+        footer { margin-top: 20px; padding: 10px; background: #333; color: white; }
     </style>
 </head>
 <body>
-    <h1>Bem-vindo ao Sistema de Marcação de Turmas</h1>
-    <p>Este é um projeto para facilitar a organização de turmas em instituições.</p>
-    <p>Repositório no GitHub: <a href="https://github.com/seu-usuario/seu-repositorio" target="_blank">Clique aqui</a></p>
+    <header>
+        Sistema de Marcação de Turmas
+    </header>
+    
+    <section>
+        <h2>📌 Sobre o Projeto</h2>
+        <p>Este sistema facilita a marcação de turmas para instituições de ensino. Alunos e professores informam suas preferências de horário, permitindo à instituição formar turmas de forma eficiente.</p>
+    </section>
+    
+    <section>
+        <h2>✅ Funcionalidades</h2>
+        <ul>
+            <li>Cadastro de instituições, alunos, professores e turmas</li>
+            <li>Interface gráfica intuitiva baseada no Qt Creator</li>
+            <li>Seleção de preferências de horário para alunos e professores</li>
+            <li>Banco de dados SQLite para armazenamento de informações</li>
+            <li>Criação manual de turmas com base nas preferências cadastradas</li>
+            <li>Edição e exclusão de registros diretamente na interface</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>🔧 Tecnologias Utilizadas</h2>
+        <ul>
+            <li><strong>Linguagem:</strong> C++</li>
+            <li><strong>Framework de Interface Gráfica:</strong> Qt Creator</li>
+            <li><strong>Banco de Dados:</strong> SQLite</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>📷 Interface do Sistema</h2>
+        <p>Confira abaixo algumas telas do sistema:</p>
+        <img src="img/tela-login.png" alt="Tela de Login" class="screenshot">
+        <p><strong>Tela de Login</strong></p>
+        <img src="img/tela-principal.png" alt="Tela Principal" class="screenshot">
+        <p><strong>Tela Principal</strong></p>
+    </section>
+    
+    <section>
+        <h2>🚀 Como Executar</h2>
+        <p><strong>Requisitos:</strong></p>
+        <ul>
+            <li>Instalar o <a href="https://www.qt.io/download" target="_blank">Qt Creator</a></li>
+            <li>Instalar o <a href="https://sqlitestudio.pl/" target="_blank">SQLite Studio</a></li>
+        </ul>
+        <p><strong>Passos:</strong></p>
+        <pre>
+        git clone https://github.com/seu-usuario/seu-repositorio.git
+        cd seu-repositorio
+        </pre>
+        <p>Abra o projeto no Qt Creator, compile e execute.</p>
+    </section>
+    
+    <section>
+        <h2>📌 Melhorias Futuras</h2>
+        <ul>
+            <li>Automatização da criação de turmas</li>
+            <li>Interfaces dedicadas para alunos e professores</li>
+            <li>Refatoração do código para aplicar conceitos avançados de POO</li>
+            <li>Melhoria no design da interface gráfica</li>
+        </ul>
+    </section>
+    
+    <footer>
+        <p>Desenvolvido por Pedro Augusto Stelzer da Silva - 2025</p>
+    </footer>
 </body>
 </html>
