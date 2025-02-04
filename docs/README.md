@@ -43,6 +43,38 @@ Compile e execute o sistema
 
 **Obs**: É necessário modificar o caminho de arquivos do banco de dados. Futuramente haverá melhorias no projeto para facilitar a instalação.
 
+## 📷 Interfaces
+
+### Tela de Login  
+![image](https://github.com/user-attachments/assets/0b494d89-2adb-4835-b023-5ebbc2776d30)
+ 
+
+### Tela de Cadastro Inicial
+![image](https://github.com/user-attachments/assets/81f80252-ec77-40ab-934c-29d2764ac655)
+
+
+### Tela Principal  
+![image](https://github.com/user-attachments/assets/5e57fb74-69c9-45b1-9e7c-a473595c4bd5)
+
+
+### Tela de Cadastro de Aluno e Professor
+
+**Obs**: A tela de cadastro de Aluno e de Professor são praticamente iguais
+
+![image](https://github.com/user-attachments/assets/dcf82f3d-e5b3-4500-b435-95fe3ed4f50b)
+
+
+### Tela de Criação de Turma
+![image](https://github.com/user-attachments/assets/f41b5084-9fb7-48d8-ad38-3c98203e9a4d)
+
+
+### Seleção de Horários
+![image](https://github.com/user-attachments/assets/5eef0bc6-db56-4952-8d89-cfc55cc2a470)
+
+
+## Arquitetura  
+![Image](https://github.com/user-attachments/assets/bfd1663b-3461-43f2-8860-4d55a4b4fc0e)  
+
 ## 📊 Banco de Dados
 
 O sistema utiliza SQLite para armazenar as informações dos alunos, professores, turmas e instituições. As tabelas principais são:
@@ -57,8 +89,8 @@ O sistema utiliza SQLite para armazenar as informações dos alunos, professores
 🔹 Automatização da criação de turmas, maximizando a compatibilidade de horários  
 🔹 Interface para alunos e professores, permitindo interação direta no sistema  
 🔹 Refatoração do código para implementar herança (exemplo: criar uma classe Usuário para unificar Aluno e Professor)  
-🔹 Aprimoramento da interface gráfica, tornando-a mais intuitiva e acessível 
-🔹 Implementação de um instalador
+🔹 Aprimoramento da interface gráfica, tornando-a mais intuitiva e acessível  
+🔹 Implementação de um instalador  
 
 ## 📌 Conclusão
 
